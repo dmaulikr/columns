@@ -26,8 +26,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-vm-Kah">
-                                <rect key="frame" x="172" y="617" width="30" height="40"/>
+                                <rect key="frame" x="167" y="617" width="40" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="U6M-LN-hoQ"/>
                                     <constraint firstAttribute="height" constant="40" id="VpU-XY-NdT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
@@ -37,8 +38,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvT-TG-8WY">
-                                <rect key="frame" x="172" y="555" width="30" height="40"/>
+                                <rect key="frame" x="167" y="555" width="40" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="FGj-vM-Rbc"/>
                                     <constraint firstAttribute="height" constant="40" id="uV1-3B-wuR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
@@ -48,8 +50,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDJ-OV-tT9">
-                                <rect key="frame" x="242" y="617" width="30" height="40"/>
+                                <rect key="frame" x="247" y="617" width="50" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="9pW-vR-Mh2"/>
                                     <constraint firstAttribute="height" constant="40" id="GYB-f0-rC1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -59,9 +62,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeB-xI-ZV4">
-                                <rect key="frame" x="102" y="617" width="30" height="40"/>
+                                <rect key="frame" x="77" y="617" width="50" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O9R-4n-YFt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="hxc-SK-zU4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="←"/>
@@ -74,11 +78,11 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-9A-2Yo">
-                                <rect key="frame" x="16" y="32.5" width="80" height="24"/>
+                                <rect key="frame" x="16" y="34" width="80" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="FFD-v5-7gr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
