@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,98 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Columns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-ct-rJY">
+                                <rect key="frame" x="168.5" y="26" width="37" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playPausedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuN-eB-h4w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-vm-Kah">
+                                <rect key="frame" x="172" y="617" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VpU-XY-NdT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="⬇︎"/>
+                                <connections>
+                                    <action selector="dropPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vka-rd-rYA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvT-TG-8WY">
+                                <rect key="frame" x="172" y="555" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uV1-3B-wuR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="↻"/>
+                                <connections>
+                                    <action selector="rotatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eF6-9m-JNB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDJ-OV-tT9">
+                                <rect key="frame" x="242" y="617" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GYB-f0-rC1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="→"/>
+                                <connections>
+                                    <action selector="rightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txm-TI-ZEi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeB-xI-ZV4">
+                                <rect key="frame" x="102" y="617" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O9R-4n-YFt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="leftPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhp-Kf-mCY"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSh-Ko-DvR" customClass="GridView" customModule="Columns" customModuleProvider="target">
+                                <rect key="frame" x="8" y="70" width="359" height="469"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UeK-vm-Kah" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bmp-Ze-plC"/>
+                            <constraint firstItem="mpx-ct-rJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HK2-XA-6Ft"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSh-Ko-DvR" secondAttribute="trailing" constant="8" id="N5k-3y-HE8"/>
+                            <constraint firstItem="jSh-Ko-DvR" firstAttribute="top" secondItem="mpx-ct-rJY" secondAttribute="bottom" constant="8" id="NEu-aR-tLL"/>
+                            <constraint firstItem="mpx-ct-rJY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="P8e-wF-DCE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UeK-vm-Kah" secondAttribute="bottom" constant="10" id="Rq4-mg-vjY"/>
+                            <constraint firstItem="eDJ-OV-tT9" firstAttribute="leading" secondItem="UeK-vm-Kah" secondAttribute="trailing" constant="40" id="eye-N9-acm"/>
+                            <constraint firstItem="PeB-xI-ZV4" firstAttribute="trailing" secondItem="UeK-vm-Kah" secondAttribute="leading" constant="-40" id="fLN-dk-CKl"/>
+                            <constraint firstItem="jSh-Ko-DvR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hfF-R5-bk8"/>
+                            <constraint firstItem="QvT-TG-8WY" firstAttribute="centerX" secondItem="UeK-vm-Kah" secondAttribute="centerX" id="lof-P9-wfx"/>
+                            <constraint firstItem="QvT-TG-8WY" firstAttribute="top" secondItem="jSh-Ko-DvR" secondAttribute="bottom" constant="16" id="owl-rj-VZ0"/>
+                            <constraint firstItem="eDJ-OV-tT9" firstAttribute="centerY" secondItem="UeK-vm-Kah" secondAttribute="centerY" id="qri-az-kKF"/>
+                            <constraint firstItem="jSh-Ko-DvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0L-ag-V8X"/>
+                            <constraint firstItem="UeK-vm-Kah" firstAttribute="top" secondItem="QvT-TG-8WY" secondAttribute="bottom" constant="22" id="xua-hQ-WuJ"/>
+                            <constraint firstItem="UeK-vm-Kah" firstAttribute="centerY" secondItem="PeB-xI-ZV4" secondAttribute="centerY" id="y5c-np-xcI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="gridView" destination="jSh-Ko-DvR" id="QbZ-2x-2KE"/>
+                        <outlet property="playPauseButton" destination="mpx-ct-rJY" id="SSw-Qi-ASB"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="rrm-B2-0iN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="170.46476761619192"/>
         </scene>
     </scenes>
 </document>

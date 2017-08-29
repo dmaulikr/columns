@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		37C6FD661F5383A4007B5B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD651F5383A4007B5B53 /* AppDelegate.swift */; };
-		37C6FD681F5383A4007B5B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD671F5383A4007B5B53 /* ViewController.swift */; };
 		37C6FD6B1F5383A4007B5B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C6FD691F5383A4007B5B53 /* Main.storyboard */; };
 		37C6FD6D1F5383A4007B5B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C6FD6C1F5383A4007B5B53 /* Assets.xcassets */; };
 		37C6FD701F5383A4007B5B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37C6FD6E1F5383A4007B5B53 /* LaunchScreen.storyboard */; };
+		37C6FD801F538A4D007B5B53 /* GridLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD781F5389A3007B5B53 /* GridLayer.swift */; };
+		37C6FD811F538A51007B5B53 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD791F5389A3007B5B53 /* GridView.swift */; };
+		37C6FD821F538A54007B5B53 /* PieceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD7A1F5389A3007B5B53 /* PieceLayer.swift */; };
+		37C6FD831F538A59007B5B53 /* TileLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD7B1F5389A3007B5B53 /* TileLayer.swift */; };
+		37C6FD841F538A5D007B5B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD7C1F5389A3007B5B53 /* ViewController.swift */; };
+		37C6FD851F538A71007B5B53 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD7E1F5389AF007B5B53 /* Game.swift */; };
+		37C6FD861F538A76007B5B53 /* StepperOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6FD7F1F5389AF007B5B53 /* StepperOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37C6FD621F5383A4007B5B53 /* Columns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C6FD651F5383A4007B5B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37C6FD671F5383A4007B5B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37C6FD6A1F5383A4007B5B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37C6FD6C1F5383A4007B5B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37C6FD6F1F5383A4007B5B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37C6FD711F5383A4007B5B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C6FD781F5389A3007B5B53 /* GridLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayer.swift; sourceTree = "<group>"; };
+		37C6FD791F5389A3007B5B53 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		37C6FD7A1F5389A3007B5B53 /* PieceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceLayer.swift; sourceTree = "<group>"; };
+		37C6FD7B1F5389A3007B5B53 /* TileLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileLayer.swift; sourceTree = "<group>"; };
+		37C6FD7C1F5389A3007B5B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37C6FD7E1F5389AF007B5B53 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		37C6FD7F1F5389AF007B5B53 /* StepperOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,35 @@
 			isa = PBXGroup;
 			children = (
 				37C6FD651F5383A4007B5B53 /* AppDelegate.swift */,
-				37C6FD671F5383A4007B5B53 /* ViewController.swift */,
+				37C6FD771F5389A3007B5B53 /* UI */,
+				37C6FD7D1F5389AF007B5B53 /* Logic */,
 				37C6FD691F5383A4007B5B53 /* Main.storyboard */,
 				37C6FD6C1F5383A4007B5B53 /* Assets.xcassets */,
 				37C6FD6E1F5383A4007B5B53 /* LaunchScreen.storyboard */,
 				37C6FD711F5383A4007B5B53 /* Info.plist */,
 			);
 			path = Columns;
+			sourceTree = "<group>";
+		};
+		37C6FD771F5389A3007B5B53 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				37C6FD7C1F5389A3007B5B53 /* ViewController.swift */,
+				37C6FD791F5389A3007B5B53 /* GridView.swift */,
+				37C6FD781F5389A3007B5B53 /* GridLayer.swift */,
+				37C6FD7A1F5389A3007B5B53 /* PieceLayer.swift */,
+				37C6FD7B1F5389A3007B5B53 /* TileLayer.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		37C6FD7D1F5389AF007B5B53 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				37C6FD7E1F5389AF007B5B53 /* Game.swift */,
+				37C6FD7F1F5389AF007B5B53 /* StepperOperation.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37C6FD681F5383A4007B5B53 /* ViewController.swift in Sources */,
+				37C6FD831F538A59007B5B53 /* TileLayer.swift in Sources */,
+				37C6FD801F538A4D007B5B53 /* GridLayer.swift in Sources */,
+				37C6FD851F538A71007B5B53 /* Game.swift in Sources */,
+				37C6FD811F538A51007B5B53 /* GridView.swift in Sources */,
+				37C6FD841F538A5D007B5B53 /* ViewController.swift in Sources */,
+				37C6FD861F538A76007B5B53 /* StepperOperation.swift in Sources */,
+				37C6FD821F538A54007B5B53 /* PieceLayer.swift in Sources */,
 				37C6FD661F5383A4007B5B53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
