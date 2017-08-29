@@ -73,19 +73,33 @@
                                 <rect key="frame" x="8" y="70" width="359" height="469"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-9A-2Yo">
+                                <rect key="frame" x="16" y="32.5" width="80" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="FFD-v5-7gr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hBS-9A-2Yo" firstAttribute="centerY" secondItem="mpx-ct-rJY" secondAttribute="centerY" priority="750" id="8L4-G1-CxN"/>
                             <constraint firstItem="UeK-vm-Kah" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bmp-Ze-plC"/>
                             <constraint firstItem="mpx-ct-rJY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HK2-XA-6Ft"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSh-Ko-DvR" secondAttribute="trailing" constant="8" id="N5k-3y-HE8"/>
                             <constraint firstItem="jSh-Ko-DvR" firstAttribute="top" secondItem="mpx-ct-rJY" secondAttribute="bottom" constant="8" id="NEu-aR-tLL"/>
                             <constraint firstItem="mpx-ct-rJY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="P8e-wF-DCE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UeK-vm-Kah" secondAttribute="bottom" constant="10" id="Rq4-mg-vjY"/>
+                            <constraint firstItem="hBS-9A-2Yo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SEY-nE-bMg"/>
+                            <constraint firstItem="mpx-ct-rJY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hBS-9A-2Yo" secondAttribute="trailing" priority="250" constant="8" id="UGX-fy-DnE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eDJ-OV-tT9" secondAttribute="trailing" priority="250" constant="8" id="VjY-LY-ybR"/>
                             <constraint firstItem="eDJ-OV-tT9" firstAttribute="leading" secondItem="UeK-vm-Kah" secondAttribute="trailing" constant="40" id="eye-N9-acm"/>
                             <constraint firstItem="PeB-xI-ZV4" firstAttribute="trailing" secondItem="UeK-vm-Kah" secondAttribute="leading" constant="-40" id="fLN-dk-CKl"/>
                             <constraint firstItem="jSh-Ko-DvR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hfF-R5-bk8"/>
                             <constraint firstItem="QvT-TG-8WY" firstAttribute="centerX" secondItem="UeK-vm-Kah" secondAttribute="centerX" id="lof-P9-wfx"/>
+                            <constraint firstItem="PeB-xI-ZV4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="8" id="mgE-To-EJE"/>
                             <constraint firstItem="QvT-TG-8WY" firstAttribute="top" secondItem="jSh-Ko-DvR" secondAttribute="bottom" constant="16" id="owl-rj-VZ0"/>
                             <constraint firstItem="eDJ-OV-tT9" firstAttribute="centerY" secondItem="UeK-vm-Kah" secondAttribute="centerY" id="qri-az-kKF"/>
                             <constraint firstItem="jSh-Ko-DvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0L-ag-V8X"/>
@@ -98,6 +112,7 @@
                     <connections>
                         <outlet property="gridView" destination="jSh-Ko-DvR" id="QbZ-2x-2KE"/>
                         <outlet property="playPauseButton" destination="mpx-ct-rJY" id="SSw-Qi-ASB"/>
+                        <outlet property="scoreLabel" destination="hBS-9A-2Yo" id="WfP-DE-4fu"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="rrm-B2-0iN"/>
                     </connections>
                 </viewController>
