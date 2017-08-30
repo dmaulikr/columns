@@ -35,7 +35,7 @@
 		37C6FD7C1F5389A3007B5B53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37C6FD7E1F5389AF007B5B53 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		37C6FD7F1F5389AF007B5B53 /* StepperOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperOperation.swift; sourceTree = "<group>"; };
-		37C6FD891F562130007B5B53 /* Font+MonospacedDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Font+MonospacedDigits.swift"; path = "../../../../Columns/Columns/Font+MonospacedDigits.swift"; sourceTree = "<group>"; };
+		37C6FD891F562130007B5B53 /* Font+MonospacedDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Font+MonospacedDigits.swift"; path = "Columns/UI/Font+MonospacedDigits.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
