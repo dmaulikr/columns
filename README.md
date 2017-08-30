@@ -9,8 +9,8 @@ After that it's fairly self explanatory.
 
 You can change the height/width of the grid:
 
-let cGridWidth = 8
-let cGridHeight = 12
+    let cGridWidth = 8
+    let cGridHeight = 12
 
 Also the speed:
 
